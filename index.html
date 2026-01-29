@@ -26,6 +26,11 @@
           <a class="header-logo section-logo" href="./index.html">
             <span class="accent">Web</span>Studio</a
           >
+          <button type="button" class="menu-open-btn">
+            <svg class="menu-open-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+            </svg>
+          </button>
           <nav class="header-menu-list">
             <ul>
               <li><a href="" class="current">Studio</a></li>
@@ -41,6 +46,53 @@
           </ul>
         </address>
       </div>
+      <!-- OPEN MENU -->
+      <!-- <div class="mob-menu">
+        <button class="menu-close" type="button">
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu-nav">
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item"><a href="" class="mob-menu-link current">Studio</a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link">Portfolio</a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link">Contacts</a></li>
+          </ul>
+        </nav>
+<address class="mob-contacts">
+    <ul class="mob-contacts-list">
+      <li class="mob-contacts-item">
+        <a class="mob-contacts-link accent" href="tel:+110001111111">+11 (000) 111-11-11</a>
+      </li>
+      <li class="mob-contacts-item">
+        <a class="mob-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+        <ul class="mob-icons-ntws">
+      <li class="mob-ntws-item">
+        <a href="" class="mob-ntws-link">
+          <svg class="mob-icon" width="24" height="24"><use href="./images/icons.svg#icon-instagram"></use></svg>
+        </a>
+      </li>
+      <li class="mob-ntws-item">
+        <a href="" class="mob-ntws-link">
+          <svg class="mob-icon" width="24" height="24"><use href="./images/icons.svg#icon-twitter"></use></svg>
+        </a>
+      </li>
+      <li class="mob-ntws-item">
+        <a href="" class="mob-ntws-link">
+          <svg class="mob-icon" width="24" height="24"><use href="./images/icons.svg#icon-facebook"></use></svg>
+        </a>
+      </li>
+      <li class="mob-ntws-item">
+        <a href="" class="mob-ntws-link">
+          <svg class="mob-icon" width="24" height="24"><use href="./images/icons.svg#icon-linkedin"></use></svg>
+        </a>
+      </li>
+    </ul>
+      </address>
+      </div> -->
     </header>
     <main>
       <section class="hero">
@@ -115,7 +167,7 @@
             <li class="team-card">
               <img
                 class="team-img"
-                src="./images/MarkGuerrero.jpg"
+                src="./images/team/MarkGuerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -158,7 +210,7 @@
             <li class="team-card">
               <img
                 class="team-img"
-                src="./images/TomFord.jpg"
+                src="./images/team/TomFord.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -201,7 +253,7 @@
             <li class="team-card">
               <img
                 class="team-img"
-                src="./images/CamilaGarcia.jpg"
+                src="./images/team/CamilaGarcia.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -244,7 +296,7 @@
             <li class="team-card">
               <img
                 class="team-img"
-                src="./images/DanielWilson.jpg"
+                src="./images/team/DanielWilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -293,12 +345,34 @@
           <ul>
             <li>
               <div class="portfolio-img-wrapper">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/portfolio/BankingAppMobile.jpg   1x,
+                      ./images/portfolio/BankingAppMobile2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/BankingAppTab.jpg   1x,
+                      ./images/portfolio/BankingAppTab2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/BankingApp.jpg   1x,
+                      ./images/portfolio/BankingApp2x.jpg 2x
+                    "
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
-                  src="./images/BankingApp.jpg"
+                  src="./images/portfolio/BankingApp.jpg"
                   alt="Banking App"
                   width="360"
-                  height="300"
                 />
                 <p class="portfolio-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -313,12 +387,34 @@
             </li>
             <li>
               <div class="portfolio-img-wrapper">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/portfolio/CashlessPaymentMobile.jpg   1x,
+                      ./images/portfolio/CashlessPaymentMobile2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/CashlessPaymentTab.jpg   1x,
+                      ./images/portfolio/CashlessPaymentTab2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/CashlessPayment.jpg   1x,
+                      ./images/portfolio/CashlessPayment2x.jpg 2x
+                    "
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
-                  src="./images/CashlessPayment.jpg"
+                  src="./images/portfolio/CashlessPayment.jpg"
                   alt="Cashless Payment"
                   width="360"
-                  height="300"
                 />
                 <p class="portfolio-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -335,12 +431,34 @@
             </li>
             <li>
               <div class="portfolio-img-wrapper">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/portfolio/MeditationAppMobile.jpg   1x,
+                      ./images/portfolio/MeditationAppMobile2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/MeditationAppTab.jpg   1x,
+                      ./images/portfolio/MeditationAppTab2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/MeditationApp.jpg   1x,
+                      ./images/portfolio/MeditationApp2x.jpg 2x
+                    "
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
-                  src="./images/MeditationApp.jpg"
+                  src="./images/portfolio/MeditationApp.jpg"
                   alt="Meditation App"
                   width="360"
-                  height="300"
                 />
                 <p class="portfolio-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -357,12 +475,34 @@
             </li>
             <li>
               <div class="portfolio-img-wrapper">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/portfolio/TaxiServiceMobile.jpg   1x,
+                      ./images/portfolio/TaxiServiceMobile2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/TaxiServiceTab.jpg   1x,
+                      ./images/portfolio/TaxiServiceTab2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/TaxiService.jpg   1x,
+                      ./images/portfolio/TaxiService2x.jpg 2x
+                    "
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
-                  src="./images/TaxiService.jpg"
+                  src="./images/portfolio/TaxiService.jpg"
                   alt="Taxi Service"
                   width="360"
-                  height="300"
                 />
                 <p class="portfolio-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -379,12 +519,34 @@
             </li>
             <li>
               <div class="portfolio-img-wrapper">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/portfolio/ScreenIllustrationsMobile.jpg   1x,
+                      ./images/portfolio/ScreenIllustrationsMobile2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/ScreenIllustrationsTab.jpg   1x,
+                      ./images/portfolio/ScreenIllustrationsTab2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/ScreenIllustrations.jpg   1x,
+                      ./images/portfolio/ScreenIllustrations2x.jpg 2x
+                    "
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
-                  src="./images/ScreenIllustrations.jpg"
+                  src="./images/portfolio/ScreenIllustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
-                  height="300"
                 />
                 <p class="portfolio-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -401,12 +563,34 @@
             </li>
             <li>
               <div class="portfolio-img-wrapper">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/portfolio/OnlineCoursesMobile.jpg   1x,
+                      ./images/portfolio/OnlineCoursesMobile2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/OnlineCoursesTab.jpg   1x,
+                      ./images/portfolio/OnlineCoursesTab2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/OnlineCourses.jpg   1x,
+                      ./images/portfolio/OnlineCourses2x.jpg 2x
+                    "
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
-                  src="./images/OnlineCourses.jpg"
+                  src="./images/portfolio/OnlineCourses.jpg"
                   alt="Online Courses"
                   width="360"
-                  height="300"
                 />
                 <p class="portfolio-item-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
