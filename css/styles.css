@@ -114,7 +114,6 @@ body {
 .header-logo-menu {
   display: flex;
   align-items: center;
-  width: 100%;
 }
 
 .menu-open-icon {
